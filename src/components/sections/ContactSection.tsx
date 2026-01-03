@@ -69,7 +69,7 @@ const ContactSection = () => {
         // Send via Formspree
         const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json",   "Accept": "application/json", },
           body: JSON.stringify({
             ...formData,
             _replyto: formData.email,
