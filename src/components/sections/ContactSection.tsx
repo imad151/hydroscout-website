@@ -37,8 +37,8 @@ import { useToast } from "@/hooks/use-toast";
 // ==========================================
 // CONFIGURATION - Edit these values:
 // ==========================================
-const USE_FORMSPREE = false; // Set to true when you have a Formspree account
-const FORMSPREE_FORM_ID = "YOUR_FORM_ID"; // Replace with your Formspree form ID
+const USE_FORMSPREE = true; // Set to true when you have a Formspree account
+const FORMSPREE_FORM_ID = "xykzdgyb"; // Replace with your Formspree form ID
 const RECIPIENT_EMAIL = "neeraj.kulkarni@gmail.com"; // Email shown in direct contact
 // ==========================================
 
