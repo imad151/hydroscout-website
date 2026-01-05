@@ -45,7 +45,7 @@ import galleryExperiment from "@/assets/gallery_experiment.png";
 import plasticTurbid from "@/assets/plastics_turbid.png";
 import disposalSystem from "@/assets/disposal_system.jpg"
 import heroRobot from "@/assets/hero-robot.jpeg";
-import datasetAnnotation from "@/assets/annotaion_dataset.png"
+import datasetAnnotation from "@/assets/annotation_dataset.png"
 
 // ==========================================
 // GALLERY ITEMS - Add new items here!
