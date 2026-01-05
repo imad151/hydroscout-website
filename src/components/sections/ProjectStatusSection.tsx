@@ -14,7 +14,7 @@ const ProjectStatusSection = () => {
       text: "Imaging and sensing systems bench-tested",
     },
     {
-      status: "in-progress",
+      status: "complete",
       text: "Dataset creation and validation in progress",
     },
     {
