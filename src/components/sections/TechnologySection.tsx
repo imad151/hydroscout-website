@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Bot, Lightbulb, Camera, DollarSign, Zap, RotateCcw, Leaf, ArrowRight } from "lucide-react";
-import plasticClear from "@/assets/plastics_dual_light.jpg"
+import plasticClear from "@/assets/plastics_dual_light.png"
 const TechnologySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
