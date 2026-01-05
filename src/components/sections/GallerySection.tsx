@@ -41,8 +41,11 @@ import {
  */
 
 // Import your gallery images here:
-import heroRobot from "@/assets/hero-robot.jpg";
-import solutionRobot from "@/assets/solution-robot.jpg";
+import galleryExperiment from "@/assets/gallery_experiment.png";
+import plasticTurbid from "@/assets/plastic_turbid.png";
+import disposalSystem from "@/assets/disposal_system.jpg"
+import heroRobot from "@/assets/hero-robot.jpeg";
+import datasetAnnotation from "@/assets/annotaion_dataset.png"
 
 // ==========================================
 // GALLERY ITEMS - Add new items here!
@@ -59,18 +62,39 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     type: "image",
-    src: heroRobot,
-    title: "HydroScout Concept Design",
-    description: "Initial 3D render of the autonomous underwater rover showcasing the streamlined hull design for efficient underwater navigation. This concept represents months of research into hydrodynamic principles and underwater robotics. The design prioritizes stability in varying water conditions while maintaining a compact form factor suitable for deployment in diverse aquatic environments.",
-    date: "2024-12-01",
+    src: galleryExperiment,
+    title: "Experimental Setup for Imaging of MicroPlastics",
+    description: "This experimental setup was designed to evaluate microplastic visibility under controlled lighting conditions. A beaker containing water polluted with small plastic fragments was imaged using a Raspberry Pi HQ Camera, with data recorded directly to on-board storage. The configuration shown includes a focused UV light source directed into the water, enabling fluorescence-based visualization of plastic particles.",
+    date: "2025-12-02",
   },
   {
     type: "image",
-    src: solutionRobot,
-    title: "Dual-Light Imaging System Test",
-    description: "Testing the dual-light optical system that enhances plastic particle visibility while reducing interference from organic materials. During this phase, we validated the effectiveness of our proprietary lighting approach in distinguishing microplastics from natural debris. The results exceeded our initial expectations, achieving significantly improved detection clarity.",
-    date: "2024-12-15",
+    src: plasticTurbid,
+    title: "Detecting Microplastics in Turbid Water Using Dual-Light Fluorescence",
+    description: "We captured images of microplastic fragments of varying sizes suspended in turbid water using a dual-light imaging system. Under white light, the plastic particles remain effectively invisible. Under UV illumination, however, the plastics fluoresce clearly, enabling reliable detection. To reflect real-world conditions, we tested the system under combined white and UV lighting, confirming that fluorescence remains detectable even in daylight-like environments where background light could interfere.",
+    date: "2025-12-03",
   },
+  {
+    type: "image",
+    src: datasetAnnotation,
+    title: "Annotating Dataset for AI based MicroPlastic Detection",
+    description: "We used the captured images of microplastics in our beaker environment and annotaed the dataset using RoboFlow annotate. We took 50 images of PET, PP and PVC plastics under White, UV and mixed lighting condition under different orientations. Using image augmentation tools, we tripled our dataset to 150 images which was used to train and fine-tune a pre-trained yolov8 model.",
+    date: "2026-01-03"
+  },
+  {
+    type: "image",
+    src: disposalSystem,
+    title: "Post Experimental Microplastics collection and disposal system",
+    description: "Following imaging experiments, microplastic-contaminated water was filtered using a muslin cloth to capture residual plastic particles. The filtered water was safely discarded, and the cloth was allowed to dry before the collected microplastics were disposed of in accordance with appropriate waste-handling practices.",
+    date: "2026-01-04",
+  },
+  {
+    type: "image",
+    src: heroRobot,
+    title: "HydroScout: First Prototype",
+    description: "Our first HydroScout prototype is ready for controlled testing. It uses four corner-mounted turbines driven by an Arduino Mega, with a Raspberry Pi acting as the central controller. The Pi coordinates motor control, toggles UV and white lighting, and provides a remote interface for teleoperation with live camera streaming. A fine-tuned onboard AI model runs on the Pi to detect microplastics in real time.",
+    date: "2026-01-03"
+  }
   // Add more items here following the same format
 ];
 // ==========================================

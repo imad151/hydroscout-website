@@ -1,7 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Bot, Lightbulb, Camera, DollarSign, Zap, RotateCcw, Leaf, ArrowRight } from "lucide-react";
-import solutionRobot from "@/assets/solution-robot.jpg";
-
+import plasticClear from "@/assets/plastics_dual_light.jpg"
 const TechnologySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
@@ -97,7 +96,7 @@ const TechnologySection = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-elevated border border-border/30">
                 <img
-                  src={solutionRobot}
+                  src={plasticClear}
                   alt="HydroScout technology model: rover, dual-light system, camera"
                   className="w-full h-auto object-cover"
                 />

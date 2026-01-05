@@ -1,6 +1,6 @@
 import { Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroRobot from "@/assets/hero-robot.jpg";
+import heroRobot from "@/assets/hero-robot.jpeg";
 
 const HeroSection = () => {
   return (
@@ -12,7 +12,7 @@ const HeroSection = () => {
             <div className="animate-fade-up">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground mb-6">
                 <Waves className="h-4 w-4" />
-                <span className="text-sm font-medium">Environmental Monitoring Technology</span>
+                <span className="text-sm font-medium">Underwater Microplastic Monitoring Technology</span>
               </div>
               
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-foreground leading-tight">
