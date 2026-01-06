@@ -1,17 +1,9 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Linkedin, Github, Quote } from "lucide-react";
 import teamSahil from "@/assets/team-sahil.jpg";
 import teamSean from "@/assets/team-sean.jpeg";
 
 /**
  * TEAM DATA - Easy to update!
- * 
- * To update team members:
- * 1. Add member photo to src/assets/
- * 2. Import it at the top
- * 3. Update the team array below
- * 
- * Social links: Replace "#" with actual URLs
  */
 
 interface TeamMember {
@@ -19,7 +11,6 @@ interface TeamMember {
   role: string;
   description: string;
   image: string;
-
 }
 
 const team: TeamMember[] = [
@@ -71,7 +62,7 @@ const TeamSection = () => {
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                
+
                 {/* Info */}
                 <div className="space-y-2">
                   <h3 className="text-lg sm:text-xl font-display font-bold text-foreground">
@@ -83,38 +74,6 @@ const TeamSection = () => {
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed pt-2">
                     {member.description}
                   </p>
-                </div>
-
-                {/* Quote */}
-                <blockquote className="relative bg-secondary/50 rounded-xl p-4 w-full">
-                  <Quote className="absolute top-3 left-3 h-4 w-4 text-primary/40" aria-hidden="true" />
-                  <p className="text-sm italic text-muted-foreground pl-6">
-                    "{member.quote}"
-                  </p>
-                </blockquote>
-
-                {/* Social Links */}
-                <div className="flex items-center gap-4 pt-2">
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    aria-label={`${member.name}'s LinkedIn profile`}
-                  >
-                    <Linkedin className="h-4 w-4" aria-hidden="true" />
-                    <span className="text-sm font-medium">LinkedIn</span>
-                  </a>
-                  <a
-                    href={member.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    aria-label={`${member.name}'s GitHub profile`}
-                  >
-                    <Github className="h-4 w-4" aria-hidden="true" />
-                    <span className="text-sm font-medium">GitHub</span>
-                  </a>
                 </div>
               </div>
             </article>
