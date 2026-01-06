@@ -19,9 +19,7 @@ interface TeamMember {
   role: string;
   description: string;
   image: string;
-  quote: string;
-  linkedin: string;
-  github: string;
+
 }
 
 const team: TeamMember[] = [
@@ -30,18 +28,12 @@ const team: TeamMember[] = [
     role: "Robotics & AI Engineer",
     description: "Leads rover design, electronics integration, and intelligent imaging systems.",
     image: teamSahil,
-    quote: "Technology should serve the planet, not just convenience.",
-    linkedin: "#", // Replace with actual LinkedIn URL
-    github: "#", // Replace with actual GitHub URL
   },
   {
     name: "Sean",
     role: "Biology & Mechatronics Engineer",
     description: "Focuses on environmental science, mechanical systems, and testing methodology.",
     image: teamSean,
-    quote: "Understanding nature is the first step to protecting it.",
-    linkedin: "#", // Replace with actual LinkedIn URL
-    github: "#", // Replace with actual GitHub URL
   },
 ];
 

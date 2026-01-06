@@ -18,7 +18,7 @@ const ProjectStatusSection = () => {
       text: "Dataset creation and validation in progress",
     },
     {
-      status: "planned",
+      status: "in-progress",
       text: "Pool and controlled field testing planned",
     },
   ];
