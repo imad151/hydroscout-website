@@ -60,6 +60,8 @@ const TeamSection = () => {
                     alt={`${member.name} - ${member.role}`}
                     loading="lazy"
                     className="w-full h-full object-cover object-top"
+                    width={224}
+                    height={224}
                   />
                 </div>
 
