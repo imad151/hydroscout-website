@@ -13,7 +13,7 @@ const TechnologySection = () => {
     { 
       icon: Lightbulb, 
       title: "Dual-Light System",
-      text: "Proprietary optical approach that enhances plastic visibility while filtering natural debris" 
+      text: "Proprietary optical approach that enhances microplastic visibility while filtering natural debris" 
     },
     { 
       icon: Camera, 
@@ -30,7 +30,7 @@ const TechnologySection = () => {
   ];
 
   const processSteps = [
-    "HydroScout enters the water body autonomously",
+    "HydroScout surveys the water body autonomously",
     "Dual-light imaging captures enhanced particle data",
     "Onboard systems distinguish plastics from organic matter",
     "Geo-tagged data builds real-time pollution maps",
@@ -53,7 +53,7 @@ const TechnologySection = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              HydroScout combines autonomous navigation with advanced optical sensing to detect microplastics that are invisible to the naked eye. Our dual-light imaging system differentiates plastic particles from organic sediment, enabling accurate pollution mapping across entire water bodies.
+              HydroScout combines autonomous navigation with advanced optical sensing to detect microplastics. Our dual-light imaging system differentiates plastic particles from organic sediment, enabling accurate pollution mapping across entire water bodies.
             </p>
 
             {/* Key Components */}

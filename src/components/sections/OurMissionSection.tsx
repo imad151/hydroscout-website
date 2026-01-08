@@ -45,7 +45,7 @@ const OurMissionSection = () => {
             <div className="gradient-card rounded-2xl p-8 border border-border/30 shadow-card">
               <h3 className="text-lg font-semibold text-primary mb-4">Mission Statement</h3>
               <p className="text-muted-foreground leading-relaxed">
-                HydroScout exists to make invisible plastic pollution visible. We are building affordable, autonomous tools that enable scientists, communities, and future innovators to detect microplastics directly in water — protecting ecosystems and human health for generations to come.
+                HydroScout exists to make invisible microplastic pollution visible. We are building affordable, autonomous tools that enable scientists, communities, and future innovators to detect microplastics directly in water — protecting ecosystems and human health for generations to come.
               </p>
             </div>
 

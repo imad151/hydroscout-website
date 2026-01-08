@@ -14,7 +14,7 @@ const ImpactFutureSection = () => {
   const impactStats = [
     {
       icon: Globe,
-      stat: "8M+ tons",
+      stat: "11M+ tons",
       label: "of plastic enter oceans annually",
     },
     {

@@ -29,7 +29,7 @@ const HeroSection = () => {
             </p>
 
             <p className="text-sm text-muted-foreground animate-fade-up animation-delay-300">
-              Built by <span className="font-semibold text-foreground">AquaMinds</span> — a student-led engineering team tackling plastic pollution through accessible technology.
+              Built by <span className="font-semibold text-foreground">AquaMinds</span> — a student-led engineering team tackling microplastic pollution of water through accessible technology.
             </p>
 
             <div className="animate-fade-up animation-delay-400">

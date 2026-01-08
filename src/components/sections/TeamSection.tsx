@@ -16,14 +16,14 @@ interface TeamMember {
 const team: TeamMember[] = [
   {
     name: "Sahil",
-    role: "Robotics & AI Engineer",
-    description: "Leads rover design, electronics integration, and intelligent imaging systems.",
+    role: "Robotics, AI and Mechanical Engineer",
+    description: "Leads rover design, electronics integration, intelligent imaging systems, and testing methodology",
     image: teamSahil,
   },
   {
     name: "Sean",
-    role: "Biology & Mechatronics Engineer",
-    description: "Focuses on environmental science, mechanical systems, and testing methodology.",
+    role: "Biologist & Mechanical Engineer",
+    description: "Focuses on environmental science and mechanical systems",
     image: teamSean,
   },
 ];
