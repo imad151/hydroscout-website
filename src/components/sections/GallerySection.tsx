@@ -15,7 +15,7 @@ import plasticTurbid from "@/assets/plastics_turbid.png";
 import disposalSystem from "@/assets/disposal_system.jpg";
 import heroRobot from "@/assets/hero-robot.jpeg";
 import datasetAnnotation from "@/assets/annotation_dataset.png";
-import assemblyGif from "@assets/test_gif.gif"
+import assemblyGif from "@/assets/test_gif.gif"
 //import assemblyImg from "assets/assembly_img.png"
 
 // ==========================================
