@@ -59,9 +59,7 @@ const TeamSection = () => {
                     src={member.image}
                     alt={`${member.name} - ${member.role}`}
                     loading="lazy"
-                    className="w-full h-full object-cover object-top-[0.2px]"
-                    width={224}
-                    height={224}
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
 
