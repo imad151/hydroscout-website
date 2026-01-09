@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import teamSahil from "@/assets/team-sahil.jpg";
+//import teamSahil from "@/assets/team-sahil.jpg";
 import teamSean from "@/assets/team-sean.jpeg";
+const teamSahil = "/team-sahil.jpg";
 
 /**
  * TEAM DATA - Easy to update!
