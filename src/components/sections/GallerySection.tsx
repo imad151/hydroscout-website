@@ -114,12 +114,23 @@ const GallerySection = () => {
             >
               {/* Image / Video */}
               <div className="relative aspect-video overflow-hidden">
-                <img
-                  src={item.src}
-                  alt={item.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+              <img
+                src={item.src}
+                alt={item.title}
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onMouseEnter={(e) => {
+                  if (item.type === "gif" && item.gifsrc) {
+                    e.currentTarget.src = item.gifsrc;
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (item.type === "gif") {
+                    e.currentTarget.src = item.src;
+                  }
+                }}
+              />
+
 
                 {item.type === "video" && (
                   <div className="absolute inset-0 flex items-center justify-center bg-foreground/20">
