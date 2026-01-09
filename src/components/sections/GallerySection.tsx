@@ -15,13 +15,16 @@ import plasticTurbid from "@/assets/plastics_turbid.png";
 import disposalSystem from "@/assets/disposal_system.jpg";
 import heroRobot from "@/assets/hero-robot.jpeg";
 import datasetAnnotation from "@/assets/annotation_dataset.png";
+import assemblyGif from "@assets/assembly_gif.gif"
+//import assemblyImg from "assets/assembly_img.png"
 
 // ==========================================
 // TYPES
 // ==========================================
 interface GalleryItem {
-  type: "image" | "video";
+  type: "image" | "video" | "gif";
   src: string;
+  gifsrc?: string;
   title: string;
   description: string;
   videoUrl?: string;
@@ -58,6 +61,13 @@ const galleryItems: GalleryItem[] = [
     title: "Post Experimental Microplastics Collection and Disposal System",
     description:
       "Following imaging experiments, microplastic-contaminated water was filtered using a muslin cloth. The filtered and clean water was safely discarded. The cloth was allowed to dry before the collected microplastics were disposed of, in accordance with appropriate waste-handling practices.",
+  },
+  {
+    type: "gif",
+    src: heroRobot,
+    gifsrc: assemblyGif,
+    title: "Thruster Wiring and Integration for Underwater Propulsion",
+    description: "This step documents the wiring and integration of the propulsion system used in the prototype. Each module is powered by a U01 brushless underwater thruster rated for 12–16 V operation and capable of producing up to 2 kg of thrust. The thrusters include bi-directional electronic speed controllers (ESCs), enabling precise forward and reverse motion control required for underwater maneuvering. Proper wiring and sealing were critical to ensure electrical safety, reliability, and consistent thrust performance during submerged operation."
   },
   {
     type: "image",
