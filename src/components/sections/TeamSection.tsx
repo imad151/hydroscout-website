@@ -55,13 +55,12 @@ const TeamSection = () => {
             >
               <div className="flex flex-col items-center text-center gap-5">
                 {/* Profile Image */}
-                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-primary/20 shadow-soft">
-                  <img
-                    src={member.image}
-                    alt={`${member.name} - ${member.role}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <div 
+                  className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-primary/20 shadow-soft bg-center bg-no-repeat bg-cover"
+                  style={{ backgroundImage: `url(${member.image})` }}
+                  role="img"
+                    aria-label={`${member.name} - ${member.role}`}
+                />
 
                 {/* Info */}
                 <div className="space-y-2">
