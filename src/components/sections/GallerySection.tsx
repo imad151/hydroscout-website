@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Play, X } from "lucide-react";
+import { Play } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -15,8 +15,7 @@ import plasticTurbid from "@/assets/plastics_turbid.png";
 import disposalSystem from "@/assets/disposal_system.jpg";
 import heroRobot from "@/assets/hero-robot.jpeg";
 import datasetAnnotation from "@/assets/annotation_dataset.png";
-import assemblyGif from "@/assets/test_gif.gif"
-//import assemblyImg from "assets/assembly_img.png"
+import assemblyGif from "@/assets/test_gif.gif";
 
 // ==========================================
 // TYPES
@@ -67,7 +66,8 @@ const galleryItems: GalleryItem[] = [
     src: heroRobot,
     gifsrc: assemblyGif,
     title: "Thruster Wiring and Integration for Underwater Propulsion",
-    description: "This step documents the wiring and integration of the propulsion system used in the prototype. Each module is powered by a U01 brushless underwater thruster rated for 12–16 V operation and capable of producing up to 2 kg of thrust. The thrusters include bi-directional electronic speed controllers (ESCs), enabling precise forward and reverse motion control required for underwater maneuvering. Proper wiring and sealing were critical to ensure electrical safety, reliability, and consistent thrust performance during submerged operation."
+    description:
+      "This step documents the wiring and integration of the propulsion system used in the prototype. Each module is powered by a U01 brushless underwater thruster rated for 12–16 V operation and capable of producing up to 2 kg of thrust. The thrusters include bi-directional electronic speed controllers (ESCs), enabling precise forward and reverse motion control required for underwater maneuvering. Proper wiring and sealing were critical to ensure electrical safety, reliability, and consistent thrust performance during submerged operation.",
   },
   {
     type: "image",
@@ -114,23 +114,22 @@ const GallerySection = () => {
             >
               {/* Image / Video */}
               <div className="relative aspect-video overflow-hidden">
-              <img
-                src={item.src}
-                alt={item.title}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                onMouseEnter={(e) => {
-                  if (item.type === "gif" && item.gifsrc) {
-                    e.currentTarget.src = item.gifsrc;
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (item.type === "gif") {
-                    e.currentTarget.src = item.src;
-                  }
-                }}
-              />
-
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onMouseEnter={(e) => {
+                    if (item.type === "gif" && item.gifsrc) {
+                      e.currentTarget.src = item.gifsrc;
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (item.type === "gif") {
+                      e.currentTarget.src = item.src;
+                    }
+                  }}
+                />
 
                 {item.type === "video" && (
                   <div className="absolute inset-0 flex items-center justify-center bg-foreground/20">
@@ -186,6 +185,12 @@ const GallerySection = () => {
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                  />
+                ) : selectedItem.type === "gif" && selectedItem.gifsrc ? (
+                  <img
+                    src={selectedItem.gifsrc}
+                    alt={selectedItem.title}
+                    className="w-full h-full object-cover"
                   />
                 ) : (
                   <img
