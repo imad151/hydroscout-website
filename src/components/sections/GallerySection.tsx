@@ -15,7 +15,7 @@ import plasticTurbid from "@/assets/plastics_turbid.png";
 import disposalSystem from "@/assets/disposal_system.jpg";
 import heroRobot from "@/assets/hero-robot.jpeg";
 import datasetAnnotation from "@/assets/annotation_dataset.png";
-import assemblyImg from "@/assets/assemblyImg.JPG"
+import assemblyImg from "@/assets/assemblyImg.jpg"
 // MP4 video
 import turbineVid from "@/assets/turbineVid.mp4";
 
