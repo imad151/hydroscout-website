@@ -15,7 +15,7 @@ import plasticTurbid from "@/assets/plastics_turbid.png";
 import disposalSystem from "@/assets/disposal_system.jpg";
 import heroRobot from "@/assets/hero-robot.jpeg";
 import datasetAnnotation from "@/assets/annotation_dataset.png";
-
+import assemblyImg from "@/assets/assemblyImg.JPG"
 // MP4 video
 import turbineVid from "@/assets/turbineVid.mp4";
 
@@ -64,7 +64,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     type: "video",
-    src: heroRobot,
+    src: assemblyImg,
     videoSrc: turbineVid,
     title: "Thruster Wiring and Integration for Underwater Propulsion",
     description:
