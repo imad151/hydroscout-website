@@ -9,6 +9,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 
+
 // Import your gallery images here:
 import galleryExperiment from "@/assets/gallery_experiment.png";
 import plasticTurbid from "@/assets/plastics_turbid.png";
